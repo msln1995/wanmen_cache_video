@@ -82,9 +82,9 @@ pip install sqlite3
 
 Authorization.ini 写入Authorization的信息，注意下面不要带空格
 
-拿一个网址举例：https://api.wanmen.org/4.0/content/courses/60dd2fb05254732b89b106af/catalogue
+拿一个网址举例：https://www.wanmen.org/courses/5fb768a429eb4ecd1bca5d60/lectures/5fe556482b5ad6568cabc9c3
 
-将60dd2fb05254732b89b106af复制到命令行运行
+将5fb768a429eb4ecd1bca5d60复制到命令行运行
 
 #### 运行
 
