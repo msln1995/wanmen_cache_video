@@ -91,6 +91,10 @@ Authorization.ini 写入Authorization的信息，注意下面不要带空格
 ```
 python run.py 60dd2fb05254732b89b106af
 ```
+或者
+```
+python runThreading.py 6035c604c47c1bbc38ffde2d
+```
 
 > 很多人觉得打包后的程序可能有后门/木马，所以大家使用命令行吧
 
