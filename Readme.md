@@ -93,6 +93,7 @@ python run.py 5fb768a429eb4ecd1bca5d60
 ```
 或者
 ```
+# （有问题，不推荐）
 python runThreading.py 5fb768a429eb4ecd1bca5d60
 ```
 
