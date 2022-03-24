@@ -34,11 +34,11 @@ def runLectures (list, item=None):
     for item2 in list:
         # 章节
         if (item == None):
-            rootPath = item2["name"]
-            print(item2["name"])
+            rootPath = item2["prefix"] + '.' + item2["name"]
+            print(item2["prefix"] + '.' + item2["name"])
         else:
-            rootPath = item["name"] + "\\" + item2["name"]
-            print(item['name'])
+            rootPath = item["prefix"] + '.' + item["name"] + "\\" + item2["prefix"] + '.' + item2["name"]
+            print(item["prefix"] + '.' + item["name"])
 
         wanmen.file.createDir(rootPath)
         for item3 in item2["children"]:
@@ -57,7 +57,7 @@ def runLectures (list, item=None):
             wanmen.file.createDir("tmp")
             wanmen.http.download(pcHigh['pcHigh'],"./Download/tmp",Authorization, token['x_time'], token['xtoken'])
             pathAddr = wanmen.file.currDirPath(rootPath)
-            wanmen.file.combine("./Download/tmp",pathAddr,item3["name"]);
+            wanmen.file.combine("./Download/tmp",pathAddr,item3["prefix"] + item3["name"]);
             wanmen.file.truncateDir();
             wanmenDb.insert(item3['name'], 1)
         print("\r\n");
