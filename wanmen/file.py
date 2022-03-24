@@ -29,7 +29,7 @@ def file_walker(path):
             file_list.append(p)
 
     # print(file_list)
-    return file_list
+    return file_list.sort();
 
 def combine(ts_path, combine_path, file_name):
     file_list = file_walker(ts_path)
